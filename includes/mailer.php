@@ -51,12 +51,12 @@ function sendEmail($to, $subject, $body, $attachments = []) {
 }
 
 
-//Step 20.5: Using the Mailer System
+//Using the Mailer System
 //Now, you can use the sendEmail function or the specific email functions (sendAdmissionConfirmationEmail, sendPaymentSuccessEmail, etc.) anywhere in your application.//
 
 //Example: Sending an Admission Confirmation Email
-//php
-//Copy
+//
+//
 //<?php
 //require_once 'includes/email.php';
 
