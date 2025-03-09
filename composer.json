@@ -1,0 +1,37 @@
+{
+    "name": "habibjubair/college-admission-system",
+    "description": "A college admission system built with PHP, HTML, JS, and Tailwind CSS.",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Habib Mazarbhuiya",
+            "email": "contact@ihabib.co.uk"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "vlucas/phpdotenv": "^5.4",
+        "setasign/fpdf": "^1.8",
+        "phpoffice/phpspreadsheet": "^1.23",
+        "phpmailer/phpmailer": "^6.6",
+        "paragonie/anti-csrf": "^2.0",
+        "robthree/twofactorauth": "^1.8",
+        "illuminate/database": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "includes/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "php -r \"copy('.env.example', '.env');\"",
+            "php -r \"chmod('storage', 0777);\""
+        ]
+    }
+}
